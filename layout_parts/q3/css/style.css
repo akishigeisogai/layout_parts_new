@@ -3,3 +3,33 @@
 /* 回答はここに書いてね */
 
 /* 回答はここに書いてね */
+
+.q3_table {
+  width: 100%;
+  border: 1px solid #dedede;
+  table-layout: fixed;
+}
+.q3_table th,.q3_table td {
+  padding: 10px;
+  border: 1px solid #dedede;
+  vertical-align: middle;
+}
+
+.q3_table th {
+  background-color: #24a;
+  color: #fff;
+  font-size: 18px;
+  line-height: 26px;
+}
+.q3_table td {
+  line-height: 22px;
+  text-align: center;
+}
+
+.q3_table > tbody > tr:nth-child(even) {
+  background-color: #ECF1F2;
+}
+.q3_table > tbody > tr:last-child {
+  border-top: 2px dashed #000;
+}
+

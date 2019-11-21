@@ -3,3 +3,42 @@
 /* 回答はここに書いてね */
 
 /* 回答はここに書いてね */
+
+/*吹き出しを作る*/
+.q10__item {
+  position: relative;
+  width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+  border: 5px solid #222;
+  border-radius: 30px;
+
+}
+
+.q10__item:before,
+.q10__item:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;/*吹き出し下向きの凸作成　後で色付けするため透明にしておく*/
+  content: "";
+
+}
+
+/*下向きを作る*/
+.q10__item:before {
+  bottom: -45px;
+  left: 30px;
+  border-top-color: #222;
+
+}
+
+/*下向きを白で塗りつぶす*/
+.q10__item:after {
+  bottom: -38px;
+  left: 30px;
+  border-top-color: #fff;
+  
+}
