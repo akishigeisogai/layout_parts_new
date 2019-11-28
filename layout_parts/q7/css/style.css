@@ -52,10 +52,16 @@
   font-size: 16px;
 }
 
+.q7--inlineblock .q7__inner {
+  font-size: 0;
+
+}
+
+
 /* Q7-3 inline-blockでの横並び  */
 .q7--inlineblock .q7__box {
   display: inline-block;
-  margin-left: 45px;
+  margin-left: 50px;
   font-size: 16px;
   vertical-align: middle;
   box-sizing: border-box;
@@ -85,17 +91,16 @@
 }
 
 /* ー Q7-5 inline-blockとmarginでの横並び ー */
+.q7--margin .q7__inner {
+  font-size: 0;
+}
 
 .q7--margin .q7__box  {
   vertical-align: top;
 
 }
 
-.q7--margin .q7__inner {
-  font-size: 0;
-}
-
-.q7--margin .q7__box__inline-block {
+.q7--margin .q7__box.isleft {
   display: inline-block;
   width: 300px;
 
